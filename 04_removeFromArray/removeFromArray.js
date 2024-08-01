@@ -1,12 +1,11 @@
 const removeFromArray = function (arr, ...params) {
-    for (let i = 0; i <= params.length; i++) {
-        for (let j = 0; j <= arr.length; j++) {
-            if (arr[j] === params[i]) {
-                arr.splice(j, 1);
-            }
+    const finArr = [];
+    arr.forEach((item) => {
+        if (!params.includes(item)) {
+            finArr.push(item);
         }
-    }
-    return arr;
+    });
+    return finArr;
 };
 
 // Do not edit below this line
