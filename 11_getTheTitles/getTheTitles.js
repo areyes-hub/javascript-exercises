@@ -6,7 +6,7 @@ const getTheTitles = function (books) {
 
     // Alternate solution:
 
-    // for (let i = 0; i < 2; i++) {
+    // for (let i = 0; i < books.length; i++) {
     //     titles.push(books[i].title)
     // }
 
