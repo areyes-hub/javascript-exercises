@@ -1,35 +1,30 @@
-const add = function (num1, num2) {
-  let sum = +num1 + +num2;
-  return sum;
+const add = (num1, num2) => {
+  return +num1 + +num2;
 };
 
-const subtract = function (num1, num2) {
-  let diff = num1 - num2;
-  return diff;
+const subtract = (num1, num2) => {
+  return num1 - num2;
 };
 
-const sum = function (nums) {
+const sum = (nums) => {
   if (nums.length === 0) {
     return 0;
   }
   else {
-    let result = nums.reduce((num1, num_n) => +num1 + +num_n);
-    return result;
+    return nums.reduce((num1, num_n) => +num1 + +num_n);
   }
 
 };
 
-const multiply = function (nums) {
-  let result = nums.reduce((num1, num_n) => num1 * num_n, 1);
-  return result;
+const multiply = (nums) => {
+  return nums.reduce((num1, num_n) => num1 * num_n, 1);
 };
 
-const power = function (num1, num2) {
-  let pow = num1 ** num2;
-  return pow;
+const power = (num1, num2) => {
+  return num1 ** num2;
 };
 
-const factorial = function (number) {
+const factorial = (number) => {
   let fact = 1;
   let zero = 0;
   if (number === zero) {
